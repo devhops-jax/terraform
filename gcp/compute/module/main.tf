@@ -6,7 +6,7 @@ resource "google_compute_instance" "vm" {
 
   boot_disk {
     initialize_params {
-      image = "ubuntu-1804-lts"
+      image = "${var.image}"
     }
   }
 
